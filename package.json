@@ -1,0 +1,29 @@
+{
+  "name": "fec-proxy-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "react-dev": "webpack -d --watch",
+    "nodemon": "nodemon ./proxyServer/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-http-proxy": "^1.2.0",
+    "http-proxy": "^1.17.0",
+    "react": "^16.5.1",
+    "react-dev": "0.0.1",
+    "react-dom": "^16.5.1",
+    "request": "^2.88.0",
+    "webpack": "^4.19.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "webpack-cli": "^3.1.0"
+  }
+}
