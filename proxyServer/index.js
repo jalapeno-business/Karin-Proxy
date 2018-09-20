@@ -16,15 +16,15 @@ app.all('/api/restaurant/suggestions/*', (req, res) => res.redirect(`http://loca
 app.all('/api/restaurant/carousel/*', (req, res) => res.redirect(`http://localhost:8888${req.path}`));
 app.all('/api/restaurant/recommendations/*', (req, res) => res.redirect(`http://localhost:3004${req.path}`));
 
-app.use((req, res) => { 
-  console.log(req.path);
-  const restaurantId = req.path.slice(1).split('/')[0];
-  if (restaurantId === '' || (restaurantId && Number.isInteger(+restaurantId))) {
-    res.sendFile(path.join(__dirname, '../public', 'index.html'));
-  } else {
-    res.send('Error').end();
-  }
-});
+// app.use((req, res) => { 
+//   console.log(req.path);
+//   const restaurantId = req.path.slice(1).split('/')[0];
+//   if (restaurantId === '' || (restaurantId && Number.isInteger(+restaurantId))) {
+//     res.sendFile(path.join(__dirname, '../public', 'index.html'));
+//   } else {
+//     res.send('Error').end();
+//   }
+// });
 
 app.listen(port, () => console.log("listening on", port));
 

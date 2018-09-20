@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    
+    <div id="app">
+        <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+        <div id="Carousel" class="carousel"></div>
+        <div id="Info" class="info"></div>
+        <div id="Recommendations" class="recommendations"></div>
+        <div id="Reviews" class="reviews"></div>
+        <div id="Suggestions" class="suggestions"></div>
+        
+        <!-- Bundles -->
+        <script src="https://s3-us-west-1.amazonaws.com/zagat-carousel/bundle.js"></script>
+        <script src='https://s3.amazonaws.com/zagatrecommendations/bundle.js'></script>
+        <script src='https://s3.us-east-2.amazonaws.com/fec-zagat/reviews.js'></script>
+        <script src="https://s3.us-east-2.amazonaws.com/zagat-fec/suggestionsBundle.js"></script>
+        <script src="https://s3.us-east-2.amazonaws.com/zagat-fec/bundle.js"></script>
+
+        </div>
+        <script>
+        ReactDOM.render(
+        React.createElement(Recommendations),
+        document.getElementById('Recommendations')
+        )
+        ReactDOM.render(
+        React.createElement(Info),
+        document.getElementById('Info')
+        );  
+        ReactDOM.render(
+        React.createElement(Carousel),
+        document.getElementById('Carousel')
+        );  
+        ReactDOM.render(
+        React.createElement(Reviews),
+        document.getElementById('Reviews')
+        );  
+        ReactDOM.render(
+        React.createElement(Suggestions),
+        document.getElementById('Suggestions')
+        );  
+    </script>
+</body>
+</html>
+
