@@ -6,11 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "react-dev": "webpack -d --watch",
-    "nodemon": "nodemon ./proxyServer/index.js"
+    "start": "node ./proxyServer/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.1.0",
+    "cors": "^2.8.4",
     "express": "^4.16.3",
     "express-http-proxy": "^1.2.0",
     "http-proxy": "^1.17.0",
